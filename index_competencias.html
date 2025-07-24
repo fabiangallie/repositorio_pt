@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Competencias del Aula del Futuro</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: url('img/fondo_index.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 60px 0 100px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* VIDEO DE FONDO */
+    .video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .titulo-neon {
+      font-size: 3rem;
+      color:  #fee427 ;
+      text-shadow: 0 0 5px  #837300 , 0 0 15px #00ff88, 0 0 30px #00ff88;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .pantalla {
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      padding: 50px;
+      width: 95%;
+      max-width: 1600px;
+      box-shadow: 0 0 60px 30px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      text-align: center;
+      color: white;
+      margin-bottom: 80px;
+    }
+
+    .grupo {
+      background: linear-gradient(145deg, #0f2027, #203a43);
+      padding: 40px 20px;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .grupo:hover {
+      transform: scale(1.05);
+    }
+
+    .grupo.emocional {
+      border: 2px solid #00ffff;
+    }
+    .grupo.emocional:hover {
+      box-shadow: 0 0 20px #00ffff88;
+    }
+    .grupo.emocional h2 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+    .grupo.emocional ul li a:hover {
+      color: #00ffff;
+    }
+
+    .grupo.valores {
+      border: 2px solid #ff33cc;
+    }
+    .grupo.valores:hover {
+      box-shadow: 0 0 20px #ff33cc88;
+    }
+    .grupo.valores h2 {
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    .grupo.valores ul li a:hover {
+      color: #ff33cc;
+    }
+
+    .grupo.aula {
+      border: 2px solid #00ff88;
+    }
+    .grupo.aula:hover {
+      box-shadow: 0 0 20px #00ff8888;
+    }
+    .grupo.aula h2 {
+      color: #00ff88;
+      text-shadow: 0 0 10px #00ff8888;
+    }
+    .grupo.aula ul li a:hover {
+      color: #00ff88;
+    }
+
+    .grupo ul {
+      list-style: none;
+    }
+
+    .grupo ul li {
+      margin: 10px 0;
+      font-size: 1em;
+    }
+
+    .grupo ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.2s;
+    }
+
+    .gif-directo {
+      width: 20%;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .gif-directo img {
+      max-width: 600px;
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+    }
+  </style>
+</head>
+<body>
+<!-- VIDEO DE FONDO -->
+<video autoplay="" class="video-fondo" loop="" muted="" playsinline="">
+<source src="fondorepositorio.mp4" type="video/mp4"/>
+    Tu navegador no soporta video HTML5.
+  </video>
+<h1 class="titulo-neon">Repertório EscolaDiversa</h1>
+<div class="pantalla">
+<div class="grupo emocional">
+<h2>Educação emocional</h2>
+<ul>
+<li><a href="autoconceito_e_autoestima.html">Autoestima e Autoconhecimento</a></li>
+<li><a href="autorregulacao.html">Autorregulação</a></li>
+<li><a href="habilidades_sociais.html">Habilidades sociais</a></li>
+<li><a href="empatia.html">Empatia</a></li>
+<li><a href="resolucao_de_conflitos.html">Resolução de conflitos</a></li>
+</ul>
+</div>
+<div class="grupo valores">
+<h2>Educação em valores</h2>
+<ul>
+<li><a href="interculturalidade.html">Interculturalidade</a></li>
+<li><a href="respeito_e_tolerancia.html">Respeito e tolerancia</a></li>
+<li><a href="solidariedade.html">Solidariedade</a></li>
+<li><a href="responsabilidade.html">Responsabilidade</a></li>
+</ul>
+</div>
+<div class="grupo aula">
+<h2>Grupo e sala de aula</h2>
+<ul>
+<li><a href="coesao_de_grupo.html">Coesão de grupo</a></li>
+<li><a href="gestao_de_aula.html">Gestão de sala de aula</a></li>
+<li><a href="trabalho_colaborativo.html">Trabalho colaborativo e cooperativo</a></li>
+</ul>
+</div>
+</div>
+<div class="gif-directo">
+<img alt="Niños diversos animados" src="https://i.gifer.com/7SUp.gif"/>
+</div>
+</body>
+</html>
